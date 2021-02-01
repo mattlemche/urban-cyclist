@@ -1,4 +1,5 @@
 import React from 'react';
+import './Panel.scss';
 import data from '../../data';
 
 export default function Panel(props) {

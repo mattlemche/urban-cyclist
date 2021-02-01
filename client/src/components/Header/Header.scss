@@ -1,11 +1,26 @@
 .header {
+    padding-bottom: 3rem;
+
     &__title {
         font-family: "Abel";
-        font-size: 5rem;
+        font-size: 6rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+
     }
 
     &__super {
         display: block;
         font-size: 2rem;
+        line-height: 3rem;
     }
+
+    &__subtitle {
+        font-weight: 700;
+    }
+}
+
+.title-box {
+    padding: 0.75rem;
+    background-color: gray;
 }

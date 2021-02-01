@@ -1,4 +1,5 @@
 @use './partials/typography' ;
+@use './partials/variables' as *;
 
 html {
   scroll-behavior: smooth;
@@ -13,9 +14,13 @@ html {
 
 body { 
   font-family: "Bodoni Moda";
-  padding: 2rem;
+  color: $color-tar;
+}
+
+.main {
+  padding: 1rem;
 }
 
 .image {
-  max-width: 100%;
+  max-width: 120%;
 }

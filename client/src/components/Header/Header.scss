@@ -1,11 +1,17 @@
+@use '../../partials/variables' as *;
+
 .header {
-    padding-bottom: 3rem;
+    padding: 3rem 1rem 4rem;
+    background-color: $color-tar-fade;
+    color: $color-sorbet-light;
 
     &__title {
-        font-family: "Abel";
-        font-size: 6rem;
-        line-height: 6rem;
         margin-bottom: 2rem;
+        font-family: "Abel";
+        font-size: 6.5rem;
+        font-weight: 100;
+        line-height: 6rem;
+        
 
     }
 
@@ -16,11 +22,23 @@
     }
 
     &__subtitle {
+        position: relative;
+        z-index: 10;
         font-weight: 700;
     }
 }
 
 .title-box {
+    position: relative;
     padding: 0.75rem;
-    background-color: gray;
+
+}
+
+.polygon {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    fill: $color-kelly;
 }

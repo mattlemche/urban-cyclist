@@ -1,44 +1,71 @@
 @use '../../partials/variables' as *;
 
 .header {
+    position: relative;
     padding: 3rem 1rem 4rem;
-    background-color: $color-tar-fade;
     color: $color-sorbet-light;
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: -2rem;
+        left: 0;
+        width: 100%;
+        height: 105%;
+        background-color: $color-tar-fade;
+        transform: matrix( 1, -0.03, 0, 1, 0, 0 );
+    }
 
     &__title {
         margin-bottom: 2rem;
         font-family: "Abel";
         font-size: 6.5rem;
         font-weight: 100;
-        line-height: 6rem;
-        
-
+        line-height: 6.5rem;
     }
 
     &__super {
         display: block;
-        font-size: 2rem;
-        line-height: 3rem;
+        font-size: 4rem;
+        line-height: 5rem;
     }
 
     &__subtitle {
         position: relative;
         z-index: 10;
         font-weight: 700;
+        // text-shadow: 0.1rem 0.1rem 0 rgba($color-tar,0.35);
     }
 }
 
 .title-box {
     position: relative;
-    padding: 0.75rem;
+    padding: 0.75rem;    
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $color-kelly;
+        transform: matrix( 1, -0.01, 0.04, 1, 0, 0 );
+    }
 
 }
 
-.polygon {
+.pattern-swatch {
     position: absolute;
-    z-index: 1;
     top: 0;
-    left: 0;
-    width: 100%;
-    fill: $color-kelly;
+    right: 0;
+    width: 6rem;
+    height: 14rem;
+    border-radius: 0 0 0 2rem; 
+    background-image: url(../../assets/images/pattern-tile.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    box-shadow: 0.25rem 0.25rem 0 rgba($color-tar,0.25);;
 }
+

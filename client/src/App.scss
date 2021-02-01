@@ -14,13 +14,20 @@ html {
 
 body { 
   font-family: "Bodoni Moda";
-  color: $color-tar;
-}
-
-.main {
-  padding: 1rem;
+  color: $color-tar-fade;
 }
 
 .image {
-  max-width: 120%;
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  font-family: 'Abel';
+
+  &--footer {
+    display: block;
+    color: white;
+  }
+
 }

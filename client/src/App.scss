@@ -1,5 +1,10 @@
 @use './partials/typography' ;
 @use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+// ===========================\\
+//  #Global Styles
+//============================\\
 
 html {
   scroll-behavior: smooth;
@@ -19,6 +24,7 @@ body {
 
 .image {
   max-width: 100%;
+  width: 100%;
 }
 
 .link {

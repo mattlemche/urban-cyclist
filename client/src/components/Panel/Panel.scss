@@ -1,4 +1,9 @@
 @use '../../partials/variables' as *;
+@use '../../partials/mixins'as *;
+
+// ===========================\\
+//  #PANEL
+//============================\\
 
 .panel {
     padding: 1.5rem;
@@ -107,6 +112,9 @@
     &__image {
         position: relative;
         z-index: 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &::after {
             content: '';
@@ -114,8 +122,8 @@
             top: 0;
             left: 0;
             right: 0;
-            width: 13rem;
-            height: 13rem;
+            width: 75%;
+            height: 100%;
             border-radius: 50%;
             margin: 0 auto;
             background: rgba($color-robin, 0.15);

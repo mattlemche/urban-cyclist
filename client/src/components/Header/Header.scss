@@ -7,8 +7,12 @@
 
 .header {
     position: relative;
-    padding: 3rem 1rem 4rem;
+    padding: 3rem 0 4rem 1rem;
     color: $color-sorbet-light;
+
+    @include tablet {
+        padding: 3.5rem 0 6rem 2.5rem;
+    }
 
     &::before {
         content: '';
@@ -22,6 +26,12 @@
         transform: matrix( 1, -0.03, 0, 1, 0, 0 );
     }
 
+    &__content {
+        max-width: $content-max-width;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     &__title {
         position: relative;
         z-index: 10;
@@ -30,19 +40,48 @@
         font-size: 6.5rem;
         font-weight: 100;
         line-height: 6.5rem;
+
+        @include tablet {
+            font-size: 7.5rem;
+            line-height: 7.5rem;
+        }
+
+        @include desktop {
+            font-size: 10rem;
+            line-height: 10rem;
+        }
     }
 
     &__super {
         display: block;
         font-size: 4rem;
         line-height: 5rem;
+
+        @include tablet {
+            font-size: 5rem;
+            line-height: 6rem;
+        }
+
+        @include desktop {
+            font-size: 7rem;
+            line-height: 7.5rem;
+        }
     }
 
     &__subtitle {
         position: relative;
         z-index: 10;
         font-weight: 700;
-        // text-shadow: 0.1rem 0.1rem 0 rgba($color-tar,0.35);
+        
+        @include tablet {
+            font-size: 1.75rem;
+            line-height: 2.5rem;
+        }
+
+        @include desktop {
+            font-size: 2rem;
+            line-height: 2.75rem;
+        }
     }
 }
 
@@ -65,15 +104,9 @@
 }
 
 .pattern-swatch {
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    right: 0;
-    width: 6rem;
-    height: 14rem;
-    border-radius: 0 0 0 2rem; 
+    width: 40%;
     background-image: url(../../assets/images/pattern-tile.svg);
-    background-repeat: repeat;
+    // background-repeat: repeat;
     background-size: cover;
     box-shadow: 0.25rem 0.25rem 0 rgba($color-tar,0.25);;
 }

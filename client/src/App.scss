@@ -38,3 +38,47 @@ body {
   }
 
 }
+
+.animation-window {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95%;
+    border-radius: 10rem;
+    background: $color-kelly;
+    opacity: 0;
+    transition: opacity 175ms;
+  }
+  
+
+  &:hover::after {
+    opacity: 1;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65vh;
+ 
+
+  &__icon {
+    position: relative;
+    bottom: -4rem;
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+    @include color-fade-animation;
+    
+  }
+}

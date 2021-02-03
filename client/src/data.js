@@ -33,8 +33,9 @@ const ruleList = [
     },
     {
         id: 4,
-        title: 'Never pass a fellow cyclist on the right.',
-        body: '',
+        title: 'Never pass a fellow cyclist ',
+        optionalSpan: 'on the right.',
+        body: 'Period.',
         imageUrl: passCyclist,
         alt: 'Never pass a fellow cyclist on the right.'
     },

@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 // ===========================\\
 //  #Media query mixins
 //============================\\
@@ -23,5 +25,59 @@
 @mixin desktop {
     @media screen and (min-width:1130px) {
         @content;
+    }
+}
+
+
+// ===========================\\
+//  #Animation mixins
+//============================\\
+
+@mixin fade-in {
+    animation: 300ms ease fade-in;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+
+@mixin color-fade-animation {
+    animation: 10s ease forwards color-fade;
+
+    @keyframes color-fade {
+        0% {
+        fill: $color-tar-fade;
+        }
+
+        15% {
+        fill: $color-tar-fade;
+        }
+    
+        20% {
+        fill: $color-lapis;
+        }
+    
+        40% {
+        fill: $color-sorbet;
+        }
+    
+        60% {
+        fill: $color-ceder;
+        }
+    
+        80% {
+        fill: $color-robin;
+        }
+    
+        100% {
+        fill: $color-kelly;
+        }
+    
     }
 }

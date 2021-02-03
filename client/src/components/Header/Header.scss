@@ -7,8 +7,9 @@
 
 .header {
     position: relative;
-    padding: 3rem 0 4rem 1rem;
+    padding: 2.5rem 1rem 4rem;
     color: $color-sorbet-light;
+    @include fade-in;
 
     @include tablet {
         padding: 3.5rem 0 6rem 2.5rem;

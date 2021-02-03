@@ -3,7 +3,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Panel from './components/Panel/Panel';
 import Footer from './components/Footer/Footer';
-import DemoAnimation from './components/DemoAnimation/DemoAnimation';
+import IntroAnimation from './components/IntroAnimation/IntroAnimation';
 import {ReactComponent as Signal} from './assets/images/signal.svg';
 
 export default function App() {
@@ -25,18 +25,22 @@ const [hasVisited, setHasVisited] = useLocalState("DUC_Visited");
 
 const handleEnterSite = () => {
   setHasVisited(true);
-    
-  
 }
+
 
 if (!hasVisited) {
   return (
-    <div className="test">
-      <button onClick={handleEnterSite}>
-        Enter
-      </button>
-    <DemoAnimation />
-    <Signal className="intro-icon"/>
+    <div className="intro">
+      <Signal 
+      className="intro__icon" 
+      onClick={handleEnterSite}
+      />  
+    <IntroAnimation 
+    animClass="animation-window" 
+    onDivClick={handleEnterSite}
+    />
+
+    
     </div>
   )
 }

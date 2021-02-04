@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Panel from './components/Panel/Panel';
 import Footer from './components/Footer/Footer';
+import Socials from './components/Socials/Socials';
 import IntroAnimation from './components/IntroAnimation/IntroAnimation';
 import {ReactComponent as Signal} from './assets/images/signal.svg';
 
@@ -48,6 +49,7 @@ if (!hasVisited) {
     <>
       <Header />
       <Panel />
+      <Socials />
       <Footer />
     </>
   ); 

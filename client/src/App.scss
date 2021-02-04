@@ -17,6 +17,13 @@ html {
   padding: 0;
 }
 
+svg {
+
+  &:focus {
+    outline: none;
+  }
+}
+
 body { 
   font-family: "Bodoni Moda";
   color: $color-tar-fade;
@@ -32,9 +39,19 @@ body {
   text-decoration: none;
   font-family: 'Abel';
 
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $color-kelly;
+  }
+
   &--footer {
     display: block;
     color: white;
+
+    
   }
 
 }
@@ -80,5 +97,23 @@ body {
     cursor: pointer;
     @include color-fade-animation;
     
+  }
+}
+
+.react-share__ShareButton {
+  margin-right: 1rem;
+  transform: scale(1);
+  transition: transform 150ms ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 }

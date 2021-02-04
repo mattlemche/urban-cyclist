@@ -112,6 +112,11 @@
             transform: rotate(0.25deg) scale( 1.01);
             
         }
+
+        &--small {
+            width: fit-content;
+            flex-direction: column;
+        }
         
     }
 
@@ -138,6 +143,14 @@
 
     &__title-two {
         display: inline-block;
+    }
+
+    &__title-three {
+        position: relative;
+        z-index: 10;
+        margin-bottom: 1rem;
+        font-family: 'Abel';
+        font-size: 1.5rem;
     }
 
     &__body {
@@ -180,5 +193,10 @@
         }
 
         
+    }
+
+    &__socials {
+        position: relative;
+        z-index: 10;
     }
 }

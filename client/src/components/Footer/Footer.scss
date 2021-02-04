@@ -8,12 +8,21 @@
 .footer {
     position: relative;
     z-index: 10;
-    padding: 4rem 2rem 5rem;
+    padding: 4rem 2rem 6rem;
     background-color: $color-tar-fade;
+
+    &__resources {
+        margin-bottom: 1rem;
+    }
 
     &__contact {
         max-width: $content-max-width;
         width: 100%;
         margin: 0 auto;
+    }
+
+    &__title {
+        font-family: 'Abel';
+        color: White;
     }
 }

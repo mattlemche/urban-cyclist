@@ -13,7 +13,7 @@ const ruleList = [
     {
         id: 1,
         title: 'Always obey right of way.',
-        body: 'No one cares if you come to a complete stop at the stop sign, so long as you let pedestrians, cars and other cyclists have their turn.',
+        body: 'No one cares if you come to a complete stop at the stop sign, so long as you let pedestrians, cars and other cyclists have their proper turn.',
         imageUrl: rightOfWay,
         alt: 'Always obey right of way.'
     },
@@ -42,7 +42,7 @@ const ruleList = [
     {
         id: 5,
         title: 'Pass right-turning cars on the left.',
-        body: 'Unless there is a *bike zone*, you are legally obligated to pass right turning cars on the left, it\'s much safer than trying to squeeze by on the right. Not nearly enough people know or do this.',
+        body: 'Unless there is a *bike zone*, you are legally obligated to pass right turning cars on the left, it\'s much safer than trying to squeeze by on the right.',
         imageUrl: passCarLeft,
         alt: 'Pass right-turning cars on the left.'
     },
@@ -70,7 +70,7 @@ const ruleList = [
     {
         id: 9,
         title: 'Wear a helmet.',
-        body: 'You can point or use the standard signals, but if you\'re switching lanes, passing, turning, or stopping suddenly, please let everyone around you know.',
+        body: '',
         imageUrl: helmet,
         alt: 'Wear a helmet.'
     },

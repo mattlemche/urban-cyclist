@@ -8,7 +8,7 @@ export default function Panel() {
         <main className="main">
             {data.map(rule => {
                 return (
-                    <div className="panel">
+                    <div className="panel" key={rule.id}>
                         <div className="panel__content">
                             <div className="panel__copy">
                                 <h3 className="panel__title">

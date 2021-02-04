@@ -4,7 +4,7 @@ import './Footer.scss';
 export default function Footer(props) {
     return (
         <footer className="footer">
-            <div className="contact">
+            <div className="footer__contact">
                 <a href="https://mattlemche.com/" className="link link--footer">
                 Designed and developed by: Matt Lemche
                 </a>

@@ -18,6 +18,7 @@ function Socials(props) {
     const headline = "A tough-love letter to fellow city cyclists";
     const description = "Riding bikes is awesome, it's the best way to get around and I love it so much. I commute by bike something like 2000km a year, all year round, right across our fair city and I've seen it all. Countless crazy u-turns from cabs, pedestrians with their heads in their phone waltzing into the street, and all sort of other careless behaviour. But this letter is to my fellow cyclists, as we could all, myself included, lift our game.";
     const hashtags = ["DearUrbanCyclist", "bikes", "Toronto"];
+    const siteURL = "http://dearurbancyclist.com/"
     // const image = "";
 
     return (
@@ -26,30 +27,30 @@ function Socials(props) {
                 <h3 className="panel__title-three">If you wanna:</h3>
                 <div className="panel__socials">
                     <FacebookShareButton 
-                    url="https://goofy-benz-7de4d0.netlify.app/"
+                    url={siteURL}
                     quote={headline}
                     hashtag={`#${hashtags[0]}`}>
                     <FacebookIcon size={32} round={true}/>
                     </FacebookShareButton>
                     <TwitterShareButton 
-                    url="https://goofy-benz-7de4d0.netlify.app/"
+                    url={siteURL}
                     title={headline}
                     hashtags={hashtags}>
                     <TwitterIcon size={32} round={true}/>
                     </TwitterShareButton>
                     <RedditShareButton 
-                    url="https://goofy-benz-7de4d0.netlify.app/"
+                    url={siteURL}
                     title={headline}>
                     <RedditIcon size={32} round={true}/>
                     </RedditShareButton>
                     <LinkedinShareButton 
-                    url="https://goofy-benz-7de4d0.netlify.app/"
+                    url={siteURL}
                     title={headline}
                     description={description}>
                     <LinkedinIcon size={32} round={true}/>
                     </LinkedinShareButton>
                     <EmailShareButton 
-                    url="https://goofy-benz-7de4d0.netlify.app/"
+                    url={siteURL}
                     subject={headline}
                     body={description}>
                     <EmailIcon size={32} round={true}/>

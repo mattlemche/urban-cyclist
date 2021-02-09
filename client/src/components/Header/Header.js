@@ -9,12 +9,13 @@ export default function Header(props) {
                     <span className="header__super">
                     Dear
                     </span>
-                    Urban Cyclists
+                    Urban Cyclist
                 </h1>
                 <div className="title-box">
                     <h2 className="header__subtitle">
-                    A tough-love letter to fellow cyclists in Toronto.
+                    A tough-love letter to fellow city cyclists.
                     </h2>
+                    
                     
                 </div>   
             </div>

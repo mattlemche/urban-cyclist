@@ -84,6 +84,17 @@
             line-height: 2.75rem;
         }
     }
+
+    &__superscript {
+        position: relative;
+        top: -0.5rem;
+        font-size: 1rem;
+    }
+
+    &__small-font {
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .title-box {

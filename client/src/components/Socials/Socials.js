@@ -15,7 +15,7 @@ import {
   } from 'react-share';
 
 function Socials(props) {
-    const headline = "A tough-love letter to fellow cyclists in Toronto";
+    const headline = "A tough-love letter to fellow city cyclists";
     const description = "Riding bikes is awesome, it's the best way to get around and I love it so much. I commute by bike something like 2000km a year, all year round, right across our fair city and I've seen it all. Countless crazy u-turns from cabs, pedestrians with their heads in their phone waltzing into the street, and all sort of other careless behaviour. But this letter is to my fellow cyclists, as we could all, myself included, lift our game.";
     const hashtags = ["DearUrbanCyclist", "bikes", "Toronto"];
     // const image = "";

@@ -1,7 +1,7 @@
 {
   "name": "dear-urban-cyclist",
   "version": "1.0.0",
-  "description": "A touch-love letter to fellow cyclists in Toronto.",
+  "description": "A touch-love letter to fellow city cyclists.",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {},

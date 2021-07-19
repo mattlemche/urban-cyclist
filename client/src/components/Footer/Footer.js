@@ -19,7 +19,7 @@ export default function Footer(props) {
             <h3 className="footer__title">
                     About the Site
                 </h3>              
-                <a href="https://mattlemche.com/" className="link link--footer">
+                <a href="https://design.mattlemche.com/" className="link link--footer">
                 Designed and developed by: Matt Lemche
                 </a>
                 <a href="https://www.reddit.com/r/torontobiking/comments/bjvxlz/dear_urban_cyclist/" className="link link--footer">
